@@ -3,6 +3,23 @@
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 #include <stdio.h>
+#include "al.h"
+#include "alc.h"
+#include "alext.h"
+#include "efx.h"
+
+#include "efx-creative.h"
+#include "efx-presets.h"
+
+#include "al.h"
+#include "alc.h"
+#include "alext.h"
+
+#include <inttypes.h>
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 #if defined(IMGUI_IMPL_OPENGL_ES2)
 #include <GLES2/gl2.h>
 #endif
@@ -28,6 +45,7 @@ int main(int, char**)
         return 1;
 
     // Decide GL+GLSL versions
+
 #if defined(IMGUI_IMPL_OPENGL_ES2)
     // GL ES 2.0 + GLSL 100
     const char* glsl_version = "#version 100";
