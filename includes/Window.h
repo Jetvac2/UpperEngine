@@ -7,7 +7,8 @@ namespace NWindow
 	class Window
 	{
 	public:
-		int run();
+		GLFWwindow* win;
+		int run(GLFWwindow* window);
 	};
 }
 

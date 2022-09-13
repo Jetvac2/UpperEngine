@@ -3,6 +3,6 @@
 #include "Window.h"
 int main(void)
 {
-    NWindow::Window win = NWindow::Window();
-    win.run();
+    NWindow::Window window = NWindow::Window();
+    window.run(window.win);
 }
