@@ -139,9 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cpp\imguiLayer.cpp" />
+    <ClCompile Include="cpp\Gui\ImguiExample.cpp" />
+    <ClCompile Include="cpp\Gui\imguiLayer.cpp" />
     <ClCompile Include="cpp\Main.cpp" />
-    <ClCompile Include="cpp\Window.cpp" />
+    <ClCompile Include="cpp\Rendering\Renderer.cpp" />
+    <ClCompile Include="cpp\Window\Window.cpp" />
     <ClCompile Include="glad.c" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
@@ -150,7 +152,6 @@
     <ClCompile Include="imgui\imgui_impl_opengl3.cpp" />
     <ClCompile Include="imgui\imgui_tables.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
-    <ClCompile Include="cpp\ImguiExample.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="imgui\imconfig.h" />
@@ -162,8 +163,12 @@
     <ClInclude Include="imgui\imstb_rectpack.h" />
     <ClInclude Include="imgui\imstb_textedit.h" />
     <ClInclude Include="imgui\imstb_truetype.h" />
+    <ClInclude Include="includes\Gui\ImguiLayer.h" />
     <ClInclude Include="includes\ImguiLayer.h" />
+    <ClInclude Include="includes\Renderer.h" />
+    <ClInclude Include="includes\Rendering\Renderer.h" />
     <ClInclude Include="includes\Window.h" />
+    <ClInclude Include="includes\Window\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

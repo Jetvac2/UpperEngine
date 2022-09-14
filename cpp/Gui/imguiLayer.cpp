@@ -8,7 +8,6 @@
 #include "imguiLayer.h"
 #include "Window.h"
 
-
 namespace NImguiLayer
 {
 	void ImguiLayer::init(GLFWwindow* window)
@@ -16,7 +15,6 @@ namespace NImguiLayer
         //Setup Dear ImGui context
         IMGUI_CHECKVERSION();
         ImGui::CreateContext();
-        
 
         const char* glsl_version = "#version 150";
 
@@ -31,13 +29,15 @@ namespace NImguiLayer
         ImGui_ImplOpenGL3_NewFrame();
         ImGui_ImplGlfw_NewFrame();
         ImGui::NewFrame();
-
-        int width, height;
-        glfwGetWindowSize(window, &width, &height);
-        io.DisplaySize = ImVec2(width, height);
-
+        
+        glfwGetWindowSize(window, &winWidth, &winHeight);
+        io.DisplaySize = ImVec2(winWidth, winHeight);
+      
         if (show_demo_window)
-        ImGui::ShowDemoWindow(&show_demo_window);
+        {
+            ImGui::ShowDemoWindow(&show_demo_window);
+
+        }
 
         ImGui::Begin("Hello, world!");
 
@@ -48,7 +48,7 @@ namespace NImguiLayer
         ImGui::End();
 
         ImGui::Render();
-        int display_w, display_h;
+       
         glfwGetFramebufferSize(window, &display_w, &display_h);
         glViewport(0, 0, display_w, display_h);
         ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());

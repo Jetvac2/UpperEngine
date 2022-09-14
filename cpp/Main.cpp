@@ -5,4 +5,5 @@ int main(void)
 {
     NWindow::Window window = NWindow::Window();
     window.run(window.win);
+    delete(window.win);
 }
