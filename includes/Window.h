@@ -11,7 +11,3 @@ namespace NWindow
 		int run(GLFWwindow* window);
 	};
 }
-
-
-
-
