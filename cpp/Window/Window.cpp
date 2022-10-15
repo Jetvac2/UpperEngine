@@ -33,6 +33,7 @@ GLuint indices[] =
 
 namespace NWindow
 {
+    //Testing git hub
     int Window::run(GLFWwindow* window)
     {
         /* Initialize the library */
