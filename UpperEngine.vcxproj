@@ -144,6 +144,8 @@
     <ClCompile Include="cpp\Main.cpp" />
     <ClCompile Include="cpp\Rendering\EBO.cpp" />
     <ClCompile Include="cpp\Rendering\shaderClass.cpp" />
+    <ClCompile Include="cpp\Rendering\stb.cpp" />
+    <ClCompile Include="cpp\Rendering\Texture.cpp" />
     <ClCompile Include="cpp\Rendering\VAO.cpp" />
     <ClCompile Include="cpp\Rendering\VBO.cpp" />
     <ClCompile Include="cpp\Window\Window.cpp" />
@@ -171,10 +173,13 @@
     <ClInclude Include="includes\Rendering\EBO.h" />
     <ClInclude Include="includes\Rendering\Renderer.h" />
     <ClInclude Include="includes\Rendering\shaderClass.h" />
+    <ClInclude Include="includes\Rendering\Texture.h" />
     <ClInclude Include="includes\Rendering\VAO.h" />
     <ClInclude Include="includes\Rendering\VBO.h" />
     <ClInclude Include="includes\Window.h" />
     <ClInclude Include="includes\Window\Window.h" />
+    <ClInclude Include="includes\Rendering\stb_image.h" />
+    <ClInclude Include="Libraries\include\stb\std_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="cpp\Rendering\default.frag" />
